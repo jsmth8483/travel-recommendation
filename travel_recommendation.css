@@ -82,6 +82,10 @@ nav {
     padding-left: 10px;
 }
 
+.nav-branding:hover {
+    cursor: pointer;
+}
+
 .nav-branding h1 {
     font-weight: 400;
     margin: 0 10px;
