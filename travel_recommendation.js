@@ -58,6 +58,10 @@ function clearSearchResults() {
 
 // IIFE to add event listeners
 (function () {
+    document.querySelector('.nav-branding').addEventListener('click', () => {
+        window.location.href = 'index.html';
+    });
+
     document
         .getElementById('searchInput')
         .addEventListener('keydown', (event) => {

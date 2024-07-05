@@ -22,8 +22,7 @@ main {
         ),
         url('./images/background.jpg') no-repeat;
     background-size: cover;
-    /* height: 100%; */
-    flex-grow: 1;
+    height: calc(100% - 52px);
 }
 
 .social-ribbon {
@@ -72,6 +71,7 @@ nav {
         );
     justify-content: space-between;
     align-items: center;
+    height: 52px;
 }
 
 .nav-branding {
@@ -155,7 +155,7 @@ nav {
 
 .home-content-container {
     display: flex;
-    height: 100vh;
+    height: calc(100% - 52px);
     width: 100%;
     justify-content: space-between;
 }
@@ -349,7 +349,6 @@ textarea {
 
 #search-results-container {
     margin: 0 3%;
-    height: 100%;
     overflow-y: auto;
     scrollbar-width: none;
     min-width: 200px;
