@@ -1,54 +1,71 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <script
-      src="https://kit.fontawesome.com/5f2f6b9c85.js"
-      crossorigin="anonymous"
-    ></script>
+    <head>
+        <script
+            src="https://kit.fontawesome.com/5f2f6b9c85.js"
+            crossorigin="anonymous"
+        ></script>
 
-    <link rel="stylesheet" href="travel_recommendation.css" />
-
-    <title>TravelBloom</title>
-  </head>
-  <body>
-    <div class="container">
-      <nav>
-        <div class="nav-branding">
-          <i class="branding-logo fa-solid fa-2x fa-plane-departure"></i>
-          <h1>TravelBloom</h1>
+        <link rel="stylesheet" href="travel_recommendation.css" />
+        <script src="travel_recommendation.js" defer></script>
+        <title>TravelBloom</title>
+    </head>
+    <body>
+        <div class="container">
+            <nav>
+                <div class="nav-branding">
+                    <i
+                        class="branding-logo fa-solid fa-2x fa-plane-departure"
+                    ></i>
+                    <h1>TravelBloom</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="./travel_recommendation.html">Home</a></li>
+                    <li><a href="./about_us.html">About Us</a></li>
+                    <li><a href="./contact_us.html">Contact Us</a></li>
+                </ul>
+                <div class="search">
+                    <input
+                        id="searchInput"
+                        type="text"
+                        placeholder="Enter a destination or keyword"
+                    />
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <button class="searchBtn" onclick="search()">Search</button>
+                    <button class="clearBtn" onclick="clearSearchResults()">
+                        Clear
+                    </button>
+                </div>
+            </nav>
+            <main>
+                <div class="social-ribbon">
+                    <div class="vertical-line"></div>
+                    <div class="social-icons">
+                        <i class="fa-brands fa-2x fa-twitter"></i>
+                        <i class="fa-brands fa-2x fa-facebook-f"></i>
+                        <i class="fa-brands fa-2x fa-instagram"></i>
+                        <i class="fa-brands fa-2x fa-youtube"></i>
+                    </div>
+                </div>
+                <div class="home-content-container">
+                    <div class="home-content">
+                        <h2>Explore Dream Destination</h2>
+                        <p>
+                            It encourages exploration of unfamiliar territories,
+                            embracing diverse cultures and landscapes, while
+                            pursuing the desired destination that captivates the
+                            heart and ignites a sense of wonder.
+                        </p>
+                        <button>Book Now</button>
+                    </div>
+                    <div id="search-results-container">
+                        <div id="local-time"></div>
+                        <div id="search-results">
+                            Please enter a valid search query
+                        </div>
+                    </div>
+                </div>
+            </main>
         </div>
-        <ul class="nav-menu">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
-        <div class="search">
-          <input type="text" placeholder="Enter a destination or keyword" />
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <button class="searchBtn">Search</button>
-          <button class="clearBtn">Clear</button>
-        </div>
-      </nav>
-      <main>
-        <div class="social-ribbon">
-          <div class="vertical-line"></div>
-          <div class="social-icons">
-            <i class="fa-brands fa-2x fa-twitter"></i>
-            <i class="fa-brands fa-2x fa-facebook-f"></i>
-            <i class="fa-brands fa-2x fa-instagram"></i>
-            <i class="fa-brands fa-2x fa-youtube"></i>
-          </div>
-        </div>
-        <section class="home-content">
-          <h2>Explore Dream Destination</h2>
-          <p>
-            It encourages exploration of unfamiliar territories, embracing
-            diverse cultures and landscapes, while pursuing the desired
-            destination that captivates the heart and ignites a sense of wonder.
-          </p>
-          <button>Book Now</button>
-        </section>
-      </main>
-    </div>
-  </body>
+    </body>
 </html>
